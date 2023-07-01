@@ -10,11 +10,11 @@ if (emailButton) {
         loadingButton.scrollIntoView({ behavior: 'smooth' })
         // const getSelectedMember = document.querySelector('input[name="communityMembers"]:checked')
         // console.log(getSelectedMember)
-        console.log("Button clicked")
+        // console.log("Button clicked")
         // const text = document.getElementById("textareaspace").value
         // console.log(text)
         const prompt = `you are a helpful and positive bot with a friendly tone who gives information about a user's carbon footprint at an event in central london. I say that I walked to this event, and brought a reusable coffee cup with me and am a vegetarian. You reply to give me a carbon score (out of 10) and some advice about how I can further reduce my environmental impact while at the event (e.g. by turning off devices when not in use and by using half flushes):`
-        console.log(prompt)
+        // console.log(prompt)
     
         const keyresp = await fetch('/.netlify/functions/get-token')
         .then(response => response.json()
