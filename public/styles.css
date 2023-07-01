@@ -252,5 +252,19 @@ shadow {
     .w-600px {
       width: 600px;
     }
+
+    /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+    /* FORMATTING LINKS */
+
+    /* changing hyperlinks to be green, when the mouse isn't hovering over it */
+    a {
+      color: rgb(2, 134, 72);
+    }
+  
+    /* when the mouse is hovering over a link -> getting rid of the underline and making the link green */
+    a:hover {
+      text-decoration: none;
+      color: rgb(2, 134, 72);
+    }
   
    
