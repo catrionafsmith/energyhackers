@@ -13,6 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
         <title>Carbon Hackers</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body class="d-flex flex-column">
     <header>
@@ -124,20 +125,21 @@
                     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Write your guess here">
                 </div>
                 <button type="button" id="fetch-email-btn" class="btn btn-primary my-3">Submit</button>
+            <!-- Loading button -->
+            <button id="loadingButton" class="btn btn-primary mb-5" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Loading...(up to 20 seconds)
+            </button>
+            <!-- Output container -->
+            <div >
+                <div class="mb-3" id="output-container">
+                    <label for="exampleFormControlTextarea1" class="form-label text-center">Your carbon information is here!</label>
+                    <textarea class="form-control api-output mb-3" rows="10" id="myInput"></textarea>
+                </div>
+            </div>
             </form>
         </div>
-        <!-- Loading button -->
-        <button id="loadingButton" class="btn btn-primary mb-5" type="button" disabled>
-            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-            Loading...(up to 20 seconds)
-        </button>
-        <!-- Output container -->
-        <div >
-            <div class="mb-3" id="output-container">
-                <label for="exampleFormControlTextarea1" class="form-label">Your carbon information is here!</label>
-                <textarea class="form-control api-output mb-3" rows="10" id="myInput"></textarea>
-            </div>
-        </div>
+        
     </main>
     <!-- Begin footer -->
     <footer class="footer mt-auto py-3">
