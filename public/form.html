@@ -33,7 +33,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link "  href="form.html">Form</a>
+                <a class="nav-link "  href="form.html">Carbon Calculator</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="offset.html">Offset</a>
@@ -56,11 +56,12 @@
     <main class="flex-shrink-0">
       <!-- Top Section -->
         <div class=" top-section container-fluid">
-            <h1>Find out your Carbon Footprint!</h1>
+            <h1>Calculate your Carbon Footprint!</h1>
             <img src="img/croptrees.png" alt="Photo by Mimi Thian on Unsplash" class="img-fluid trees" height="100">
         
         </div>
         <div class="p-3 container">
+          <p>Calculate your carbon emissions at the CodeNode event by completing the questions below!</p>
             <form>
                 <div class="mb-3">
                 <label for="travel" class="form-label">How do you plan to travel to the CodeNode event?</label>
@@ -99,7 +100,7 @@
                       </div>
                 </div>
                 <div class="mb-3">
-                    <label for="flexRadioDefault" class="form-label">What food will you eat at the event today?</label>
+                    <label for="flexRadioDefault" class="form-label">What food will you eat at the event?</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="food-option" id="foodoption1">
                         <label class="form-check-label" for="foodoption1">
@@ -119,14 +120,28 @@
                         </label>
                       </div>
                     </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">What is your ideal temperature to work at?</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Write your ideal temperature here">
-                </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label">How much energy could be saved each year by using half flushes?</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Write your guess here">
-                </div>
+                    <div class="mb-3">
+                      <label for="flexRadioDefault" class="form-label">Are you normally too cold/ hot at similar events you have attended in the past?</label>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="temp-option" id="tempoption1">
+                          <label class="form-check-label" for="foodoption1">
+                            Hot
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="temp-option" id="tempoption2">
+                          <label class="form-check-label" for="foodoption2">
+                            Ok
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="temp-option" id="tempoption3" checked>
+                          <label class="form-check-label" for="tempoption3">
+                            Cold
+                          </label>
+                        </div>
+                      </div>
+          
                 <button type="button" id="fetch-email-btn" class="btn btn-primary my-3">Submit</button>
             <!-- Loading button -->
             <button id="loadingButton" class="btn btn-primary mb-5" type="button" disabled>
